@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Imposta arquivo de script -->
+    <!-- Importa arquivo de script -->
     <script src="js/script.js" type="text/javascript" defer></script>
-    <!-- Imposta folha de estilo -->
-    <link rel="Stylesheet" href="css/style.css">
+    <!-- Importa folha de estilo -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Hello World</title>
 </head>
 <body>
     <h1>Bem-vindo ao Javascript!</h1>
     <br>
-    <label for="nomeUsuario">Insira seu nome:</label>
+    <!-- <label for="nomeUsuario">Insira seu nome: </label>
     <input id="nomeUsuario" type="text">
     <button onclick="mostrarNome()">Enviar</button>
     <br>
@@ -20,14 +20,75 @@
     <p id="paragrafo"></p>
     <br>
     <br>
-    <h1>somar dois numeros</h1>
-    <input type ="text" name="n2" id="n2"
-    placeholder="digite o valor do primeiro numero">
-    <input type ="text" name="n2" id="n2"
-    placeholder="digite o valor do segundo numero">
-    <h1> Calcular área do circulo</h1>
-    <input type="text" nome="raio" id="raio" placeholder="Digite o valor do raio">
+    <h1>Calcular área do círculo</h1>
+    <input type="text" name="raio" id="raio" placeholder="Digite o valor do raio">
     <button onclick="calcAreaCirculo()">Calcular</button>
-    <p is="area"></p>
+    <p id="area"></p>
+    <br>
+    <br>
+    <h1>Somar dois números</h1>
+    <input type="number" name="n1" id="n1" placeholder="Digite o valor do primeiro número">
+    <input type="number" name="n2" id="n2" placeholder="Digite o valor do segundo número">
+    <button onclick="soma()">Calcular</button>
+    <p id="soma"></p>
+     -->
+    <hr>
+    <input type="number" name="ret1" id="ret1" placeholder="Digite o valor do Lado 1 Retangulo">
+    <input type="number" name="ret2" id="ret2" placeholder="Digite o valor do Lado 2 Retangulo">
+    <button onclick="somaRet()">Calcular</button>
+    <p id="somaRet">A área do retangulo é:</p>
+    <hr>
+    <input type="number" name="losas1" id="losas1" placeholder="Digite o valor do base Triaangulo">
+    <input type="number" name="losas2" id="losas2" placeholder="Digite o valor do altura Triaangulo">
+    <button onclick="Losango()">Losango</button>
+    <p id="AreaLosa">A área do Losango é:</p>
+    <hr>
+    <input type="number" name="BaseMenor" id="basemenor" placeholder="Digite o valor do base Menor">
+    <input type="number" name="BaseMaior" id="Basemaior" placeholder="Digite o valor da base Maior">
+    <input type="number" name="altura" id="altura" placeholder="Digite o valor da altura">
+    <button onclick="Trapezio()">Trapezio</button>
+    <p id="AreaTrapezio">A área do Trapezio é:</p>
+    <hr>
+    <hr>
+    <hr>
+    <p><h2>CALCULO DE VOLUMES DE SOLIDOS</h2></p>
+    <p><h3>CUBO</h3></p>
+    <input type="number" name="ladodocubo" id="ladodocubo" placeholder="Digite o valor lado do cubo">
+    <button onclick="volumeCubo()">Cubo</button>
+    <p id="volumeCubo">Volume do cubo é:</p>
+    <p><h3>PARALELEPIPEDO</h3></p>
+    <input type="number" name="ladoparal" id="ladoparal" placeholder="Digite o valor lado do Paralalepidedo">
+    <!-- <input type="number" name="alturap" id="alturap" placeholder="Digite o valor da altura"> -->
+    <button onclick="paral()">Trapezio</button>
+    <p id="paral1"> Volume do Paralalepidedo é:</p>
+    <p><h3>ESFERA</h3></p>
+    <input type="number" name="esfera" id="esfera" placeholder="Digite o valor do raio">
+    <!-- <input type="number" name="alturap" id="alturap" placeholder="Digite o valor da altura"> -->
+    <button onclick="esfera()">Trapezio</button>
+    <p id="esfera2"> Volume da Esfera é:</p>
+    <p><h3>CILINDRO</h3></p>
+    <input type="number" name="cilindro" id="cilindro" placeholder="Digite o valor do raio">
+     <input type="number" name="alturap" id="alturap" placeholder="Digite o valor da altura">
+    <button onclick="cilindro()">cilindro</button>
+    <p id="cilindrox"> Volume do cilindro é:</p>
+    <p id="esfera2"> Volume da Esfera é:</p>
+
+    <p><h3>CONE</h3></p>
+    <input type="number" name="cone" id="cone" placeholder="Digite o valor do raio">
+     <input type="number" name="alturacone" id="alturacone" placeholder="Digite o valor da altura">
+    <button onclick="cone()">cone</button>
+    <p id="conex"> Volume do Cone é:</p>
+    
+
+    <p><h3>PIRAMIDE</h3></p>
+    <input type="number" name="piramide" id="piramide" placeholder="Digite o valor do Lado">
+     <input type="number" name="alturapir" id="alturapir" placeholder="Digite o valor da altura">
+    <button onclick="piramide()">Piramide</button>
+    <p id="piramidox"> Volume do Piramide é:</p>
+    
+    
+
+
+
 </body>
 </html>
