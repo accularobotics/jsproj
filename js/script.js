@@ -78,7 +78,20 @@ function cone() {
 function piramide() {
     let pirar1 = Number(document.getElementById("piramide").value)
     let piral = Number(document.getElementById("alturapir").value)
-  
+
     let pirar = (pirar1 **2 * piral) / 3
     document.getElementById("piramidox").innerText = pirar + "m²"
+}
+
+
+function bascara() {
+    let VA = Number(document.getElementById("A1").value)
+    let VB = Number(document.getElementById("B1").value)
+    let VC = Number(document.getElementById("C1").value)
+
+    let delta = ((VB**2) - (4 * VA * VC))
+    let X1 = (- VB - ( delta**0.5)) / (2 *VA)
+    let X2 = (- VB + ( delta**0.5)) / (2 *VA)
+    
+    document.getElementById("raizes").innerText = "x1= "+ X1 + "--" + " x2= "+ X2 +" delta= "+ delta
 }
