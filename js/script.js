@@ -47,15 +47,17 @@ function extratos() {
     const saldoInicial = Number(document.getElementById("saldo").value);
     const operacao = Number(document.getElementById("operacao").value);
     const tipoOperacao = document.getElementById("tipo").value;
+    if (tipoOperacao != "d/c") {
+            // Verifica o tipo de operação e atualiza o saldo
+            if (tipoOperacao === "+") {
+                saldoAtual = saldoInicial + operacao; // Depósito
+            } else if (tipoOperacao === "-") {
+                saldoAtual = saldoInicial - operacao; // Saque
+            }
 
-    // Verifica o tipo de operação e atualiza o saldo
-    if (tipoOperacao === "+") {
-        saldoAtual = saldoInicial + operacao; // Depósito
-    } else if (tipoOperacao === "-") {
-        saldoAtual = saldoInicial - operacao; // Saque
-    }
-
-    // Atualiza o campo de saldo inicial e o texto de saldo atual
-    document.getElementById("saldo").value = saldoAtual;
-    document.getElementById("SaldoAtu").innerText = `Saldo Atual: ${saldoAtual}`;
+            // Atualiza o campo de saldo inicial e o texto de saldo atual
+            document.getElementById("saldo").value = saldoAtual;
+            document.getElementById("SaldoAtu").innerText = `Saldo Atual: ${saldoAtual}`;
+            document.getElementById("tipo").value = "d/c"
+        }        
 }
