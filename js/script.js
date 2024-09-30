@@ -1,43 +1,69 @@
 
-function NumeroPrimo() {
-    let primo = Number(document.getElementById("primo").value)
+function Matematica() {
+    let x = Number(document.getElementById("x").value)
+    let y = Number(document.getElementById("y").value)
+    let operacao = document.getElementById("operacao").value
+    let resultado
+
+
+switch (operacao) {
     
+    case "+":
+        resultado = x+y
+         document.getElementById("numero").innerText += "resultado :" + resultado  
+          
+    break
+    case "-":
+        resultado = x-y
+        document.getElementById("numero").innerText += "resultado :" + resultado 
+    break 
+    case "*":
+        resultado = x*y
+        document.getElementById("numero").innerText += "resultado :" + resultado
+        
+    break
+    case "/":
+        resultado = x/y
+        document.getElementById("numero").innerText += "resultado :"  + resultado
+    break
+    default:
+    document.getElementById("numeros").innerHTML = `erro !`
     
-
-      if( (primo == 2) || (primo == 3) || (primo == 5) || (primo == 7 )){
-       document.getElementById("numero").innerText = "Esse é número primo"
-
-      }   else
-
-
-    if (primo %2 ==0 ) {
-        document.getElementById("numero").innerText = "Divisivel por 2"
-    } else if (primo %3 == 0) {
-        document.getElementById("numero").innerText = "Divisivel por 3"
-    } else if (primo %7 == 0) {
-        document.getElementById("numero").innerText = "Divisivel por 7"
-     } else  { 
-         document.getElementById("numero").innerText = "Esse é número primo"
-     } 
 
 }
-function classAtleta(){
+}
 
-    let atleta = Number(document.getElementById("atleta").value)
+function salario() {
+    let salario = Number(document.getElementById("salario").value)
+    let senoriedade = document.getElementById("senoriedade").value
+    
+    let resultadox
 
-    if ((atleta  >= 6) & (atleta <= 11)) {
-         document.getElementById("atletas").innerText = "Infantil"
-    } else 
-        if ((atleta  >= 12) & (atleta <= 17)) {
-            document.getElementById("atletas").innerText = "Juvenil"
-    }
-    else 
-        if ((atleta  >= 18) & (atleta <= 34)) {
-            document.getElementById("atletas").innerText = "Adulto"
-    } else {
+switch (senoriedade) {
+    
+    case "j":
+        resultadox = salario + (salario*1.1)
+         document.getElementById("numerow").innerText += "resultado :" + resultadox  
+          
+    break
+    case "p":
+        resultadox = salario + (salario*1.075)
+         document.getElementById("numerow").innerText += "resultado :" + resultadox  
+    break 
+    case "s":
+        resultadox = salario + (salario*1.05)
+         document.getElementById("numerow").innerText += "resultado :" +  resultadox  
+        
+    break
 
-        document.getElementById("atletas").innerText = "Atleta inapto !"        
-    }
-
+    
+    default:
+    document.getElementById("numerow").innerHTML = `erro !`
+    
 
 }
+}
+
+
+
+

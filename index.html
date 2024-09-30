@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,53 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Hello World</title>
 </head>
+
 <body>
-    <h1>Número Primo</h1>
+    <h1>operação Matematica</h1>
     <br>
-    
-    <hr>
-    <input type="number" name="primo" id="primo" placeholder="Digite o numero a ser testado">
+    <input type="number" name="x" id="x" placeholder="Digite X">
+    <input type="number" name="y" id="y" placeholder="Digite Y">
+
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
     <!-- ---------------------------- -->
-    <button onclick="NumeroPrimo()">Calcular Média</button>
+    <button onclick="Matematica()">Calcular Média</button>
     <p id="numero">O número é :</p>
-        <!-- ---------------------------- -->
-    <hr>
-    <h1>Classificar Atleta</h1>
-    <br>    
-    <hr>
-    <input type="number" name="atleta" id="atleta" placeholder="Digite a idade do atleta">
-   
-    <button onclick="classAtleta()">Categoria</button>
-    <p id="atletas">O atleta é :</p>
-    <!-- ---------------------------- -->
-    <h1>Indice de Poluição</h1>
-    <button onclick="NumeroPrimo()">Calcular Média</button>
-    <p id="numero">O número é :</p>
-    <hr>
     
+<!-- =============== -->
+<h1>Salario Atual</h1>
+<br>
+<input type="number" name="salario" id="salario" placeholder="Digite salario Atual">
+
+
+<select id="senoriedade">
+    <option value="j">Junio</option>
+    <option value="p">Pleno</option>
+    <option value="s">Senior</option>
     
-    <hr>
-    <input type="number" name="atleta" id="atleta" placeholder="Digite a idade do atleta">
+</select>
+<!-- ---------------------------- -->
+<button onclick="salario()">Calcular Média</button>
+<p id="numerow">O salario é :</p>
+<!-- ---------------------------- -->
+<h1>Cardapio</h1>
+<br>
+<input type="number" name="cardapio" id="cardapio" placeholder="Digite salario Atual">
+
+
+<select id="senoriedade">
+    <option value="j">Junio</option>
+    <option value="p">Pleno</option>
+    <option value="s">Senior</option>
     
-    <button onclick="classAtleta()">Categoria</button>
-    <p id="atletas">O atleta é :</p>
+</select>
+<!-- ---------------------------- -->
+<button onclick="salario()">Calcular Média</button>
+<p id="numerow">O salario é :</p>
 
 
 
@@ -45,8 +63,9 @@
 
 
 
-    
-    
+
+
     <script src="js/script.js" type="text/javascript" defer></script>
 </body>
+
 </html>
