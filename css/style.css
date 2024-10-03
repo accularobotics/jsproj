@@ -1,4 +1,16 @@
 button{
 
-    background-color: aquamarine;
+    background-color: red;
+    color: black;
+    /* border: 50px */
+    
+}
+    
+button:hover {
+
+    background-color: white;
+    color: red;
+    
+
+
 }
